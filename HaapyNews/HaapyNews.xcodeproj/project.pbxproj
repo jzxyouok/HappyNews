@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		03CD6B971BBBA82800E8EA44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6B961BBBA82800E8EA44 /* main.m */; };
 		03CD6B9A1BBBA82800E8EA44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6B991BBBA82800E8EA44 /* AppDelegate.m */; };
-		03CD6B9D1BBBA82800E8EA44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6B9C1BBBA82800E8EA44 /* ViewController.m */; };
-		03CD6BA01BBBA82800E8EA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CD6B9E1BBBA82800E8EA44 /* Main.storyboard */; };
 		03CD6BA21BBBA82800E8EA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CD6BA11BBBA82800E8EA44 /* Assets.xcassets */; };
 		03CD6BA51BBBA82800E8EA44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CD6BA31BBBA82800E8EA44 /* LaunchScreen.storyboard */; };
 		03CD6BB01BBBA82800E8EA44 /* HaapyNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6BAF1BBBA82800E8EA44 /* HaapyNewsTests.m */; };
 		03CD6BBB1BBBA82800E8EA44 /* HaapyNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6BBA1BBBA82800E8EA44 /* HaapyNewsUITests.m */; };
+		E13424FF50250128732B5FEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA031B8F7188132E39A71443 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 		03CD6B961BBBA82800E8EA44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03CD6B981BBBA82800E8EA44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03CD6B991BBBA82800E8EA44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		03CD6B9B1BBBA82800E8EA44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		03CD6B9C1BBBA82800E8EA44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		03CD6B9F1BBBA82800E8EA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03CD6BA11BBBA82800E8EA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03CD6BA41BBBA82800E8EA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03CD6BA61BBBA82800E8EA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,9 @@
 		03CD6BB61BBBA82800E8EA44 /* HaapyNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaapyNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CD6BBA1BBBA82800E8EA44 /* HaapyNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaapyNewsUITests.m; sourceTree = "<group>"; };
 		03CD6BBC1BBBA82800E8EA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2163147DB205CC258FA68BF8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		686972AC935FE3EF80BA72F7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BA031B8F7188132E39A71443 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13424FF50250128732B5FEE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +78,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035C52A31BBBC1F7001141AE /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				035C52A41BBBC1F7001141AE /* news */,
+				035C52A51BBBC1F7001141AE /* tools */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		035C52A41BBBC1F7001141AE /* news */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		035C52A51BBBC1F7001141AE /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
 		03CD6B891BBBA82800E8EA44 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +108,8 @@
 				03CD6BAE1BBBA82800E8EA44 /* HaapyNewsTests */,
 				03CD6BB91BBBA82800E8EA44 /* HaapyNewsUITests */,
 				03CD6B931BBBA82800E8EA44 /* Products */,
+				4A6DDF7055263923E7BB76CF /* Pods */,
+				AB839AF5FA40263263781C14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +126,9 @@
 		03CD6B941BBBA82800E8EA44 /* HaapyNews */ = {
 			isa = PBXGroup;
 			children = (
+				035C52A31BBBC1F7001141AE /* classes */,
 				03CD6B981BBBA82800E8EA44 /* AppDelegate.h */,
 				03CD6B991BBBA82800E8EA44 /* AppDelegate.m */,
-				03CD6B9B1BBBA82800E8EA44 /* ViewController.h */,
-				03CD6B9C1BBBA82800E8EA44 /* ViewController.m */,
-				03CD6B9E1BBBA82800E8EA44 /* Main.storyboard */,
 				03CD6BA11BBBA82800E8EA44 /* Assets.xcassets */,
 				03CD6BA31BBBA82800E8EA44 /* LaunchScreen.storyboard */,
 				03CD6BA61BBBA82800E8EA44 /* Info.plist */,
@@ -140,6 +163,23 @@
 			path = HaapyNewsUITests;
 			sourceTree = "<group>";
 		};
+		4A6DDF7055263923E7BB76CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2163147DB205CC258FA68BF8 /* Pods.debug.xcconfig */,
+				686972AC935FE3EF80BA72F7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB839AF5FA40263263781C14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA031B8F7188132E39A71443 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03CD6BBF1BBBA82800E8EA44 /* Build configuration list for PBXNativeTarget "HaapyNews" */;
 			buildPhases = (
+				F9202F349B637586850A2759 /* Check Pods Manifest.lock */,
 				03CD6B8E1BBBA82800E8EA44 /* Sources */,
 				03CD6B8F1BBBA82800E8EA44 /* Frameworks */,
 				03CD6B901BBBA82800E8EA44 /* Resources */,
+				02838FBE167D81CB7DAB1248 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +287,6 @@
 			files = (
 				03CD6BA51BBBA82800E8EA44 /* LaunchScreen.storyboard in Resources */,
 				03CD6BA21BBBA82800E8EA44 /* Assets.xcassets in Resources */,
-				03CD6BA01BBBA82800E8EA44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,12 +306,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02838FBE167D81CB7DAB1248 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9202F349B637586850A2759 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03CD6B8E1BBBA82800E8EA44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CD6B9D1BBBA82800E8EA44 /* ViewController.m in Sources */,
 				03CD6B9A1BBBA82800E8EA44 /* AppDelegate.m in Sources */,
 				03CD6B971BBBA82800E8EA44 /* main.m in Sources */,
 			);
@@ -308,14 +381,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03CD6B9E1BBBA82800E8EA44 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03CD6B9F1BBBA82800E8EA44 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03CD6BA31BBBA82800E8EA44 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +474,7 @@
 		};
 		03CD6BC01BBBA82800E8EA44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2163147DB205CC258FA68BF8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HaapyNews/Info.plist;
@@ -420,6 +486,7 @@
 		};
 		03CD6BC11BBBA82800E8EA44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686972AC935FE3EF80BA72F7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HaapyNews/Info.plist;
@@ -496,6 +563,7 @@
 				03CD6BC11BBBA82800E8EA44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03CD6BC21BBBA82800E8EA44 /* Build configuration list for PBXNativeTarget "HaapyNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +572,7 @@
 				03CD6BC41BBBA82800E8EA44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03CD6BC51BBBA82800E8EA44 /* Build configuration list for PBXNativeTarget "HaapyNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +581,7 @@
 				03CD6BC71BBBA82800E8EA44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
