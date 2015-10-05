@@ -10,9 +10,9 @@
 		03CD6B971BBBA82800E8EA44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6B961BBBA82800E8EA44 /* main.m */; };
 		03CD6B9A1BBBA82800E8EA44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6B991BBBA82800E8EA44 /* AppDelegate.m */; };
 		03CD6BA21BBBA82800E8EA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CD6BA11BBBA82800E8EA44 /* Assets.xcassets */; };
-		03CD6BA51BBBA82800E8EA44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CD6BA31BBBA82800E8EA44 /* LaunchScreen.storyboard */; };
 		03CD6BB01BBBA82800E8EA44 /* HaapyNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6BAF1BBBA82800E8EA44 /* HaapyNewsTests.m */; };
 		03CD6BBB1BBBA82800E8EA44 /* HaapyNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CD6BBA1BBBA82800E8EA44 /* HaapyNewsUITests.m */; };
+		083F76C31BC285A3004EE4CB /* NewsCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 083F76C21BC285A3004EE4CB /* NewsCellTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		087D910A1BBE0E4200EA4AF1 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 087D91091BBE0E4200EA4AF1 /* News.m */; settings = {ASSET_TAGS = (); }; };
 		08B5AF961BBCC133004C0934 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B5AF951BBCC133004C0934 /* NewsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		08B5AF981BBCC140004C0934 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B5AF971BBCC140004C0934 /* News.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -44,7 +44,6 @@
 		03CD6B981BBBA82800E8EA44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03CD6B991BBBA82800E8EA44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		03CD6BA11BBBA82800E8EA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		03CD6BA41BBBA82800E8EA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03CD6BA61BBBA82800E8EA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03CD6BAB1BBBA82800E8EA44 /* HaapyNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaapyNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CD6BAF1BBBA82800E8EA44 /* HaapyNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaapyNewsTests.m; sourceTree = "<group>"; };
@@ -52,6 +51,8 @@
 		03CD6BB61BBBA82800E8EA44 /* HaapyNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaapyNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CD6BBA1BBBA82800E8EA44 /* HaapyNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaapyNewsUITests.m; sourceTree = "<group>"; };
 		03CD6BBC1BBBA82800E8EA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083F76C11BC285A3004EE4CB /* NewsCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCellTableViewCell.h; sourceTree = "<group>"; };
+		083F76C21BC285A3004EE4CB /* NewsCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCellTableViewCell.m; sourceTree = "<group>"; };
 		087D91081BBE0E4200EA4AF1 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		087D91091BBE0E4200EA4AF1 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		08B5AF941BBCC133004C0934 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
@@ -109,6 +110,8 @@
 				08B5AF971BBCC140004C0934 /* News.storyboard */,
 				087D91081BBE0E4200EA4AF1 /* News.h */,
 				087D91091BBE0E4200EA4AF1 /* News.m */,
+				083F76C11BC285A3004EE4CB /* NewsCellTableViewCell.h */,
+				083F76C21BC285A3004EE4CB /* NewsCellTableViewCell.m */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -152,7 +155,6 @@
 				03CD6B981BBBA82800E8EA44 /* AppDelegate.h */,
 				03CD6B991BBBA82800E8EA44 /* AppDelegate.m */,
 				03CD6BA11BBBA82800E8EA44 /* Assets.xcassets */,
-				03CD6BA31BBBA82800E8EA44 /* LaunchScreen.storyboard */,
 				03CD6BA61BBBA82800E8EA44 /* Info.plist */,
 				03CD6B951BBBA82800E8EA44 /* Supporting Files */,
 			);
@@ -280,6 +282,7 @@
 				TargetAttributes = {
 					03CD6B911BBBA82800E8EA44 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4ZY6EV6TFP;
 					};
 					03CD6BAA1BBBA82800E8EA44 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -316,7 +319,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CD6BA51BBBA82800E8EA44 /* LaunchScreen.storyboard in Resources */,
 				03CD6BA21BBBA82800E8EA44 /* Assets.xcassets in Resources */,
 				08B5AF981BBCC140004C0934 /* News.storyboard in Resources */,
 			);
@@ -380,6 +382,7 @@
 				08B5AF9B1BBCCD1F004C0934 /* NetWorkTools.m in Sources */,
 				087D910A1BBE0E4200EA4AF1 /* News.m in Sources */,
 				08B5AF961BBCC133004C0934 /* NewsTableViewController.m in Sources */,
+				083F76C31BC285A3004EE4CB /* NewsCellTableViewCell.m in Sources */,
 				03CD6B9A1BBBA82800E8EA44 /* AppDelegate.m in Sources */,
 				03CD6B971BBBA82800E8EA44 /* main.m in Sources */,
 			);
@@ -415,17 +418,6 @@
 			targetProxy = 03CD6BB71BBBA82800E8EA44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		03CD6BA31BBBA82800E8EA44 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03CD6BA41BBBA82800E8EA44 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		03CD6BBD1BBBA82800E8EA44 /* Debug */ = {
@@ -513,6 +505,7 @@
 			baseConfigurationReference = 2163147DB205CC258FA68BF8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HaapyNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wzy.HaapyNews;
@@ -525,6 +518,7 @@
 			baseConfigurationReference = 686972AC935FE3EF80BA72F7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HaapyNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wzy.HaapyNews;

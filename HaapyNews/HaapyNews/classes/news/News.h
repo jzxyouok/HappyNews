@@ -14,12 +14,12 @@
 
 @property (nonatomic,copy) NSString *digest;
 
-@property (nonatomic,assign) int replycount;
+@property (nonatomic,assign) int replyCount;
 
 @property (nonatomic,copy) NSString *imgsrc;
 
 +(instancetype)newsWithDict:(NSDictionary *)dict;
 
-+(void)loadNewsListWithURLString:(NSString *)urlstring;
++(void)loadNewsListWithURLString:(NSString *)urlstring finished:(void (^)(NSArray *))finished;
 
 @end
