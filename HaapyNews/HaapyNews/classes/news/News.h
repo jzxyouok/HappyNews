@@ -26,7 +26,7 @@
  */
 @property (nonatomic,assign,getter=isBigImage) BOOL imageType;
 
-+(instancetype)newsWithDict:(NSDictionary *)dict;
+
 
 +(void)loadNewsListWithURLString:(NSString *)urlstring finished:(void (^)(NSArray *))finished;
 

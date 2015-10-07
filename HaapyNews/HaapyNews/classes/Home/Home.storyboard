@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4MT-VV-vgH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hyJ-ce-I8a">
+            <objects>
+                <navigationController id="4MT-VV-vgH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9aS-Wy-HIR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DWg-AD-YuB" kind="relationship" relationship="rootViewController" id="HC6-EX-oN5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcl-uJ-QpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-545" y="404"/>
+        </scene>
+        <!--网易新闻-->
+        <scene sceneID="xuV-d5-nPT">
+            <objects>
+                <viewController id="DWg-AD-YuB" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="anU-ej-DRp"/>
+                        <viewControllerLayoutGuide type="bottom" id="8mS-dq-Rfh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sTh-yB-HXx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEp-Im-4mI" userLabel="容器视图">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFH-Pu-Ae0" userLabel="频道视图">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CHa-6v-OmK"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LFH-Pu-Ae0" firstAttribute="top" secondItem="dEp-Im-4mI" secondAttribute="top" id="Hmn-aB-Rbf"/>
+                                    <constraint firstItem="LFH-Pu-Ae0" firstAttribute="leading" secondItem="dEp-Im-4mI" secondAttribute="leading" id="JNb-zW-dDg"/>
+                                    <constraint firstAttribute="trailing" secondItem="LFH-Pu-Ae0" secondAttribute="trailing" id="Meq-Uj-rSl"/>
+                                    <constraint firstAttribute="height" constant="44" id="Wrv-m2-Av6"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4AB-5D-J9x">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iq1-cu-KKN" userLabel=" Layout">
+                                    <size key="itemSize" width="131" height="127"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="a9j-UJ-Tiy" customClass="CollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="131" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="DWg-AD-YuB" id="M9P-gz-6jm"/>
+                                    <outlet property="delegate" destination="DWg-AD-YuB" id="FdX-wa-wpX"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dEp-Im-4mI" secondAttribute="trailing" id="8fx-f0-Rve"/>
+                            <constraint firstItem="dEp-Im-4mI" firstAttribute="leading" secondItem="sTh-yB-HXx" secondAttribute="leading" id="92W-8C-Qwy"/>
+                            <constraint firstItem="dEp-Im-4mI" firstAttribute="top" secondItem="anU-ej-DRp" secondAttribute="bottom" id="GWd-pp-QoZ"/>
+                            <constraint firstItem="8mS-dq-Rfh" firstAttribute="top" secondItem="4AB-5D-J9x" secondAttribute="bottom" id="HyQ-pJ-5Bw"/>
+                            <constraint firstItem="4AB-5D-J9x" firstAttribute="top" secondItem="LFH-Pu-Ae0" secondAttribute="bottom" id="Jb4-VT-4hg"/>
+                            <constraint firstItem="4AB-5D-J9x" firstAttribute="leading" secondItem="LFH-Pu-Ae0" secondAttribute="leading" id="Tgy-gy-Lko"/>
+                            <constraint firstItem="4AB-5D-J9x" firstAttribute="trailing" secondItem="LFH-Pu-Ae0" secondAttribute="trailing" id="nyo-ae-xrn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="网易新闻" id="U7N-95-4vt"/>
+                    <connections>
+                        <outlet property="channelView" destination="LFH-Pu-Ae0" id="vRq-eP-dyR"/>
+                        <outlet property="collectionView" destination="4AB-5D-J9x" id="C2X-Ia-vhf"/>
+                        <outlet property="layout" destination="iq1-cu-KKN" id="w0y-X3-9gh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ch5-cF-Mr5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="404"/>
+        </scene>
+    </scenes>
+</document>
