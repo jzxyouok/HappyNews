@@ -17,6 +17,14 @@
 @property (nonatomic,assign) int replyCount;
 
 @property (nonatomic,copy) NSString *imgsrc;
+/**
+ *  多图数组
+ */
+@property (nonatomic,strong) NSArray *imgextra;
+/**
+ *  是否大图标记
+ */
+@property (nonatomic,assign,getter=isBigImage) BOOL imageType;
 
 +(instancetype)newsWithDict:(NSDictionary *)dict;
 

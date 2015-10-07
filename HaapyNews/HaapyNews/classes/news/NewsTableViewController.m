@@ -28,10 +28,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     //设置预估行高
+    self.tableView.estimatedRowHeight = 80;
+//     设置行高-自动计算行高
+//     要求：
+//     1. cell中要有向下的约束，能够撑开整个cell
+//     2. 所有的约束不能有负值
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+
     
-    self.tableView.rowHeight=80.0f;
     __weak typeof (self) weakself = self ;
-    [News loadNewsListWithURLString:@"T1348647853363/0-20.html"finished:^(NSArray *newsList) {
+    [News loadNewsListWithURLString:@"T1348647853363/0-40.html"finished:^(NSArray *newsList) {
         //设置数组的数值
         weakself.newsList = newsList;
     }];
@@ -52,13 +59,22 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NewsCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell" forIndexPath:indexPath];
     
-    cell.news = self.newsList[indexPath.row];
+    News *news = self.newsList[indexPath.row];
+    NSString *ID = [NewsCellTableViewCell cellIdentifier:news];
+    NewsCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    
+    cell.news = news;
 
     
     return cell;
 }
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//
+//    return 80;
+//
+//}
 
 
 
