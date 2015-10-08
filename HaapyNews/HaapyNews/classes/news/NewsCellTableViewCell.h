@@ -16,5 +16,5 @@
 
 //设置可重用标识符
 +(NSString *)cellIdentifier:(News *)news;
-+(float)cellRowHeight:(News *)news;
+
 @end

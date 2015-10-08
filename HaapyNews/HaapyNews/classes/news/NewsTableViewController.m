@@ -27,6 +27,7 @@
 }
 
 - (void)setUrlString:(NSString *)urlString  {
+    self.newsList = nil ;
     __weak typeof (self) weakself = self ;
     [News loadNewsListWithURLString:urlString finished:^(NSArray *newsList) {
         //设置数组的数值

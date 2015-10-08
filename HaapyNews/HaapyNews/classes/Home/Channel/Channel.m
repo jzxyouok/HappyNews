@@ -44,12 +44,13 @@
         [arrayM addObject:[self objectWithDict:dict]];
     }
     
-#warning TODO
-    // 5. 针对 tid 做一个排序
+
+//    // 5. 针对 tid 做一个排序,(针对数组的排序方法)
     return [arrayM sortedArrayUsingComparator:^NSComparisonResult(Channel *obj1, Channel *obj2) {
         
         return [obj1.tid compare:obj2.tid];
     }];
+   // return arrayM.copy;
 
 }
 
